@@ -1,11 +1,12 @@
 <?header("Content-Type: text/html; charset=utf-8");?>
 <?
+// Создаем нового пользователя 
 if(isset($_POST["send"])){
     $login =$_POST["login"];
     $psrd =$_POST["psrd"];
+    // проверяем занят логин
     $dir =scandir(".");
-    print_r($dir);
-    if(in_array($login, $dir))        echo 'Логин занят';
+       if(in_array($login, $dir))        echo 'Логин занят';
     else {
         echo 'создаем папки'; 
         mkdir($login);
@@ -13,13 +14,8 @@ if(isset($_POST["send"])){
         mkdir("video");
     }
 }
-
-if(isset($_GET["send1"])){
-    $login1 =$_GET["login1"];
-    echo 'yspeh';
-    $dir1 =scandir(".");
-    print_r($dir1);
-    function delAllFiles ($d){
+// Удаление логина и всех папок
+    function delAllFiles ($d){// применяем рекурсию для удаления всех файлов и подкаталогов пользователя
         $list = glob($d."/*");
         for ($i =0; $i < count($list);$i++){
             if(is_dir($list[$i])) delAllFiles ($list[$i]);
@@ -27,8 +23,17 @@ if(isset($_GET["send1"])){
         }
         rmdir($d);
     }
-    delAllFiles($login1);
-    
+    // Проверка и удаления пользователя
+if(isset($_GET["send1"])){
+    $login1 =$_GET["login1"];
+    $dir1 =scandir(".");
+   
+    if(in_array($login1, $dir1)){
+        delAllFiles($login1);
+        echo 'Пользователь удален';
+    } 
+ else     echo 'такого логина нет'; 
+  
 }
 ?>
 
@@ -77,6 +82,6 @@ if(isset($_GET["send1"])){
              </tr>
          </table>            
      </form>
-     <p> <? echo " $login<br/> $psrd<br/> $login1<br/>"?></p>
+     <p> </p>
  </body>
 </html>
