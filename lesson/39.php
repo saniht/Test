@@ -1,5 +1,7 @@
 <?php
-<gkjhgky>
-gygbyu
+echo 'ghbdtn';
+
+
+
 
 ?>
