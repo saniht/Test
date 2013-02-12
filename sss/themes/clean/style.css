@@ -1,0 +1,280 @@
+/*==============================================================
+Reset CSS
+==============================================================*/
+*{
+
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+
+	background: #eee;
+	font:12px 'Helvetica Neue', arial;
+	padding:20px;
+	padding-top: 50px;
+}
+
+/*==============================================================
+Wrapper
+==============================================================*/
+#wrapper{
+
+	background: #fff;
+	box-shadow: 0 0 20px #ccc;
+	border:1px solid #ccc;
+	border-radius: 3px;
+}
+
+.col{
+
+	width: 50%;
+	float: left;
+}
+
+/*==============================================================
+Header
+==============================================================*/
+#header{
+
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+#header h1 a{
+
+	color:#334477;
+	text-decoration: none;
+}
+
+#header p i{
+
+	color:#aaa;
+}
+
+/*==============================================================
+Me bar
+==============================================================*/
+#me{
+
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	position: fixed;
+	top: 0px;
+	right: 21px;
+	box-shadow: 0 0 20px #000;
+	background:#222;
+	color: #fff;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 14px;
+	opacity: 0.7;
+}
+
+#me a{
+
+	color:#fff;
+	text-decoration: none;
+}
+
+#me a:hover{
+
+	color:#ff3300;
+}
+
+/*==============================================================
+Navbar
+==============================================================*/
+#navbar{
+
+	border-bottom: 1px solid #ccc;
+}
+
+#navbar li{
+
+	display: inline-block;
+}
+
+#navbar li a{
+
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color:#333;
+	border-right:1px solid #ccc;
+}
+
+/*==============================================================
+Widgets
+==============================================================*/
+.widget{
+
+	border-radius: 3px;
+	border:1px solid #ccc;
+	margin:10px;
+}
+
+.widget-title{
+
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+	background:#ccc;
+	background: #f7f7f7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f7f7f7 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f7f7f7 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f7f7f7 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f7f7f7 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	color:#333;
+	font-weight: bold;
+}
+
+/*==============================================================
+Timetable
+==============================================================*/
+.timetable{
+
+	width: 100%;
+}
+
+.timetable a{
+
+	color:#334477;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.timetable td{
+
+	padding: 5px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.timetable td:last-child{
+
+	border-right: 0px !important;
+}
+
+.timetable tr:last-child td{
+
+	border-bottom: 0px !important;
+}
+
+/*==============================================================
+List
+==============================================================*/
+.list li{
+
+	display: block;
+	padding:10px;
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+}
+
+.list li:last-child{
+
+	border-bottom: 0px !important;
+}
+
+.list li a{
+
+	display: block;
+	padding: 10px;
+	margin: -10px;
+	text-decoration: none;
+	color: #333;
+	outline: 0px !important;
+	border:0px !important;
+}
+
+.list li:last-child a{
+
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.list li a:hover{
+
+	background:#334477;
+	color: #fff;
+}
+
+/*==============================================================
+Forms
+==============================================================*/
+
+form{
+
+	margin-right:14px;
+	padding: 10px;
+}
+
+form *{
+
+	outline: 0px !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea,
+select{
+
+	width: 100%;
+	padding:5px;
+	border:1px solid #ccc;
+	font:12px arial;
+	outline: 0px !important;
+	background:#fff !important;
+	border-radius: 2px;
+	-webkit-transition:0.4s all ease-in-out;
+	-moz-transition:0.4s all ease-in-out;
+	transition:0.4s all ease-in-out;
+	-o-transition:0.4s all ease-in-out;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+select:focus{
+
+	border:1px solid #334477;
+}
+
+input[type="submit"],
+.button{
+
+	background:#334477;
+	text-decoration:none;
+	display:inline-block;
+	margin-top:10px;
+	padding:5px 10px 5px 10px;
+	border:1px solid #334477;
+	color:#fff;
+	border-radius: 2px;
+	-webkit-transition:0.4s all ease-in-out;
+	-moz-transition:0.4s all ease-in-out;
+	transition:0.4s all ease-in-out;
+	-o-transition:0.4s all ease-in-out;
+}
+
+/*==============================================================
+Footer
+==============================================================*/
+#footer{
+
+	border-top: 1px solid #ccc;
+	padding: 20px;
+	clear: both;
+}
+
+
+
+

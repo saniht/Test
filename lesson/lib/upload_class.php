@@ -23,7 +23,7 @@ abstract class Upload {
             if ($i +1 == count($this->mime_types)) return false;
         }
         $size = $file["size"];
-        if ($size> 2048000)return false;
+        if ($size> 20480000)return false;
         return true;
     }
 }
